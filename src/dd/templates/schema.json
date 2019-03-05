@@ -1,0 +1,18 @@
+{
+    "hdpk_": "hdpk_",
+    "hdpk_fields": "hdpk_fields",
+    "appLayout": "\n\tEXPORT hdpk_Layout := RECORD \nhdpk_fields \tEND;",
+    "layout": "Layout",
+    "export": "\tEXPORT ",
+    "shared": "\tSHARED ",
+    "RECORDTRANSFORMATION": "EXPORT hdpk_Ds := PROJECT(_hdpk_Ds, TRANSFORM(RECORDOF(LEFT), recordTransformation SELF := LEFT));",
+    "CHILDTRANSFORMATION": "SELF.childName := PROJECT(LEFT.childName,TRANSFORM(RECORDOF(LEFT), childRecordTransformation SELF := LEFT)),",
+    "FIELDTRANSFORMATION": "SELF.fieldName := fieldTransformation,",
+    "ASSIGNFIELDNAME": "SELF.fieldName :=",
+    "ASSIGNCHILDNAME": "SELF.childName :=",
+    "LEFT": "LEFT",
+    "VISUALIZE": "Visualizer.type('/*name_Chart*/', /*datasource*/, '/*outputName*/', /*mappings*/, /*filteredBy*/, /*dermatologyProperties*/ );",
+    "PACKAGE_": "package_",
+    "LOG_FILE_PATH": "logs/hdpk.log",
+    "isDebugEnable": true
+}

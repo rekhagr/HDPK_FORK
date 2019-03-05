@@ -1,0 +1,34 @@
+{
+    "info": {
+        "packageName": "RekhaDemo",
+        "version": "",
+        "created": "04/24/2018 11:00",
+        "author": "",
+        "description": ""
+    },
+    "data": [
+        {
+            "name": "flatpathNew",
+            "fileType": "physical",
+            "logicalPath": [
+                ".::onlinelessonpersons"
+            ],
+            "format": "FLAT",
+            "layout": [
+                {
+                    "name": "contents",
+                    "type": "string",
+                    "size": "151",
+                    "displayType": "",
+                    "displaySize": "",
+                    "textJustification": "right",
+                    "format": "",
+                    "transforms": [],
+                    "isNullable": "false",
+                    "minValue": "",
+                    "maxValue": ""
+                }
+            ]
+        }
+    ]
+}

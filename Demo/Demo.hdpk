@@ -1,0 +1,188 @@
+{
+    "data": [
+        {
+            "fileType": "physical",
+            "format": "FLAT",
+            "layout": [
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "searchkey",
+                    "size": "10",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "string"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "payload",
+                    "size": "30",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "string"
+                }
+            ],
+            "logicalPath": [
+                "aact201503::search::fixedds::gender"
+            ],
+            "name": "accountRecord"
+        },
+        {
+            "fileType": "physical",
+            "format": "FLAT",
+            "layout": [
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "date",
+                    "size": "4",
+                    "textJustification": "left",
+                    "transforms": [],
+                    "type": "unsigned"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "minutes_after_midnight",
+                    "size": "8",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "integer"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "summary",
+                    "size": "",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "string"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "temperature",
+                    "size": "6_3",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "udecimal"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "precipintensity",
+                    "size": "6_3",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "udecimal"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "preciptype",
+                    "size": "",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "string"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "windspeed",
+                    "size": "4_2",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "udecimal"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "visibility",
+                    "size": "4_2",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "udecimal"
+                },
+                {
+                    "displaySize": "",
+                    "displayType": "",
+                    "format": "",
+                    "isNullable": "false",
+                    "maxValue": "",
+                    "minValue": "",
+                    "name": "cloudcover",
+                    "size": "4_2",
+                    "textJustification": "right",
+                    "transforms": [],
+                    "type": "udecimal"
+                }
+            ],
+            "logicalPath": [
+                "taxi_data::weather_new_york_city"
+            ],
+            "name": "taxiRecord"
+        }
+    ],
+    "info": {
+        "author": "sakthi",
+        "created": "04/24/2018 11:00",
+        "description": "visualizer demo",
+        "packageName": "Demo",
+        "version": "1.0"
+    },
+    "visualizer": [
+        {
+            "dataSource": "accountRecord",
+            "name": "accountVisu",
+            "outputName": "accountOut",
+            "type": "MultiD.Area"
+        },
+        {
+            "dataSource": "taxiRecord",
+            "name": "taxiVisu",
+            "outputName": "taxiOut",
+            "type": "MultiD.Bar"
+        }
+    ]
+}
